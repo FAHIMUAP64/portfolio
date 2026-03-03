@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD. Fahim Foysal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+window.addEventListener("scroll", function () {
+    const navbar = document.querySelector("header");
+    const heroHeight = document.querySelector(".hero").offsetHeight;
+
+    let scrollPosition = window.scrollY;
+
+    if (scrollPosition <= heroHeight) {
+        let opacity = 1 - (scrollPosition / heroHeight) * 0.5;
+        navbar.style.background = `rgba(15, 32, 39, ${opacity})`;
+    } else {
+        navbar.style.background = "rgba(15, 32, 39, 0.5)";
+    }
+});
+</script>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo dynamic-island">MyPortfolio</a>
+            <ul class="nav-links">
+                <li><a href="#about" class="dynamic-island">About</a></li>
+                <li><a href="#education" class="dynamic-island">Education</a></li>
+                <li><a href="#skills" class="dynamic-island">Skills</a></li>
+                <li><a href="#projects" class="dynamic-island">Projects</a></li>
+                <li><a href="#achievements" class="dynamic-island">Achievements</a></li>
+                <li><a href="#contact" class="dynamic-island">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text-cell">
+            <h1>Hello, I'm <span>MD. Fahim Foysal</span></h1>
+            <p>I love creating digital experiences that are both functional and visually appealing.</p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+
+        <div class="hero-image-cell">
+            <img src="hero.jpeg" alt="MD. Fahim Foysal">
+        </div>
+    </section>
+    <section id="about" class="about">
+    <div class="about-card">
+        <h2>About Me</h2>
+        <p>
+            Hi, I am <strong>MD. Fahim Foysal</strong>, a passionate CSE student with strong programming skills in <strong>C, C++, Java, and Python</strong>. 
+            I also love <strong>graphic design</strong> and <strong>video editing</strong>, combining creativity with technology. 
+            I have practical experience in <strong>freelancing</strong>, delivering projects for clients while exploring new technologies and ideas.
+        </p>
+    </div>
+    </section>
+    <section id="education" class="education">
+    <h2>Education</h2>
+    <div class="education-cards">
+
+        <a href="https://www.facebook.com/groups/2712206895690773" target="_blank" class="edu-card">
+            <h3>Primary School</h3>
+            <p>Click to visit Facebook page</p>
+        </a>
+
+        <a href="https://www.facebook.com/groups/3205304826148659" target="_blank" class="edu-card">
+            <h3>High School</h3>
+            <p>Click to visit Facebook page</p>
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=100031221671311" target="_blank" class="edu-card">
+            <h3>College</h3>
+            <p>Click to visit Facebook page</p>
+        </a>
+
+        <a href="https://www.facebook.com/UAPBDDhaka" target="_blank" class="edu-card">
+            <h3>University</h3>
+            <p>Click to visit Facebook page</p>
+        </a>
+        <section id="education" class="education"></section>
+    </div>
+    </section>
+    
+    <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <p class="skills-subtitle">Technologies & Languages I Work With</p>
+    <li><a href="#skills" class="dynamic-island">Skills</a></li>
+    <div class="skills-cloud">
+        <span class="skill-chip">C</span>
+        <span class="skill-chip">C++</span>
+        <span class="skill-chip">Java</span>
+        <span class="skill-chip">Python</span>
+        <span class="skill-chip">MySQL</span>
+        <span class="skill-chip">HTML</span>
+        <span class="skill-chip">CSS</span>
+    </div>
+    <h3 class="additional-skills-title">Additional Skills</h3>
+    <div class="additional-skills-cloud">
+        <a href="photography.html" target="_blank" class="add-skill-chip">Photography</a>
+        <a href="https://www.youtube.com/@FahimsDayOn" target="_blank" class="add-skill-chip">Video Editing</a>
+    </div>
+    </section>
+    <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-stack">
+
+        <div class="project-group">
+            <h3>C</h3>
+            <div class="project-item">
+                <h4>Student Management System</h4>
+                <p>A console-based application to manage student records, grades, and basic CRUD operations using C.</p>
+            </div>
+        </div>
+
+        <div class="project-group">
+            <h3>C++</h3>
+            <div class="project-item">
+                <h4>Bank Management System</h4>
+                <p>An object-oriented console application to handle user accounts, transactions, and data persistence.</p>
+            </div>
+        </div>
+
+        <div class="project-group">
+            <h3>Java</h3>
+            <div class="project-item">
+                <h4>Library Management System</h4>
+                <p>A Java application to manage books, users, issue/return records with basic UI and file handling.</p>
+            </div>
+        </div>
+
+        <div class="project-group">
+            <h3>MySQL</h3>
+            <div class="project-item">
+                <h4>Student Database System</h4>
+                <p>A relational database project with optimized queries, relationships, and sample dataset for academic use.</p>
+            </div>
+        </div>
+
+    </div>
+    </section> 
+    <section id="achievements" class="achievements">
+    <h2>Achievements</h2>
+    <div class="achievement-gallery">
+        <a href="#img1" class="achievement-card"><img src="achievement1.jpg" alt="Achievement 1"></a>
+        <a href="#img2" class="achievement-card"><img src="achievement2.jpg" alt="Achievement 2"></a>
+        <a href="#img3" class="achievement-card"><img src="achievement3.jpg" alt="Achievement 3"></a>
+    </div>
+    <input type="checkbox" id="toggle-more" class="toggle-more">
+    <div class="achievement-gallery hidden-gallery">
+        <a href="#img4" class="achievement-card"><img src="achievement4.jpg" alt="Achievement 4"></a>
+    </div>
+    <label for="toggle-more" class="btn toggle-btn">
+        <span class="show-text">See More</span>
+        <span class="hide-text">See Less</span>
+    </label>
+</section>
+
+<div id="img1" class="lightbox"><a href="#" class="close"></a><img src="achievement1.jpg"></div>
+<div id="img2" class="lightbox"><a href="#" class="close"></a><img src="achievement2.jpg"></div>
+<div id="img3" class="lightbox"><a href="#" class="close"></a><img src="achievement3.jpg"></div>
+<div id="img4" class="lightbox"><a href="#" class="close"></a><img src="achievement4.jpg"></div>
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>
+        Email: 
+        <a 
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=fahimfysal1234@gmail.com" 
+            target="_blank"
+            style="color:#0077ff; text-decoration:none; font-weight:600;"
+        >
+            fahimfysal1234@gmail.com
+        </a>
+        Facebook: 
+        <a 
+            href="https://www.facebook.com/fahim.fysal.568/" 
+            target="_blank"
+            style="color:#0077ff; text-decoration:none; font-weight:600;"
+        >
+            Fahim Fysal
+        </a>
+    </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MD. Fahim Foysal.</p>
+    </footer>
+</body>
+</html>

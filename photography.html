@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photography Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: #0f2027;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #00c6ff;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            transition: 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,198,255,0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Photography Gallery</h1>
+
+    <div class="gallery">
+        <img src="photog1jpeg.jpeg" alt="Photography 1">
+        <img src="photog2.jpeg" alt="Photography 2">
+        <img src="photog3.jpeg" alt="Photography 3">
+        <img src="photog4.jpeg" alt="Photography 4">
+        <img src="photog5.jpeg" alt="Photography 5">
+        <img src="6.jpeg" alt="Photography 6">
+        <img src="7.jpeg" alt="Photography 7">
+        <img src="8.jpeg" alt="Photography 8">
+    </div>
+
+</body>
+</html>
